@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -36,8 +34,7 @@ body {
     padding: 20px 0;
     font-family: 'ubuntu', sans-serif;
     background-color: black;
-    /* background-color: none; */
-    border-bottom: solid black 1px;
+    /* border-bottom: solid black 1px; */
 }
 
 .navbar .max-width {
@@ -50,6 +47,14 @@ body {
     color: red;
     font-size: 35px;
     font-weight: 500;
+}
+
+@media (max-width: 500px) {
+    .navbar .logo a {
+        color: red;
+        font-size: 25px;
+        font-weight: 500;
+    }
 }
 
 .navbar .menu li {
@@ -116,13 +121,6 @@ section {
     section{
         padding: 20px 0;
     }
-
-    .menu-btn {
-        color: #fff;
-        font-size: 23px;
-        cursor: pointer;
-  
-    }
 }
 
 #top {
@@ -152,11 +150,18 @@ section {
     margin-left: -3px;
 }
 
+@media (max-width: 500px) {
+    .top .top-content .text-2 {
+        font-size: 60px;
+        font-weight: 400;
+        margin-left: -3px;
+    }
+}
+
 .top .top-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
 }
-
 
 .top .top-content a {
     display: inline-block;
@@ -178,6 +183,9 @@ section {
 
 .services {
     color: #fff;
+    display: flex;
+    /* height: 100vh;
+    min-height: 500px; */
     background-color: black;
     font-family: 'poppins', sans-serif;
 }
@@ -411,22 +419,4 @@ footer span a {
 
 footer span a:hover {
     color: #fff;
-}
-
-.alert-danger {
-    background-color: #f8d7da;
-    color: #842029;
-    margin: 10px 0;
-    border: 1px solid #f5c2c7;
-    border-radius: 6px;
-    padding: 7px;
-}
-
-.alert-sucess {
-    background-color: #d1e7dd;
-    color: #0f5132;
-    margin: 10px 0;
-    border: 1px solid #badbcc;
-    border-radius: 6px;
-    padding: 7px;
 }
